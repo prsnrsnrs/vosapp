@@ -1,0 +1,38 @@
+@charset "utf-8";
+@import "../../../assets/scss/import/style";
+
+
+.list table {
+  border: none;
+  margin-bottom: 10px;
+
+  thead th {
+    background-color: $default;
+  }
+  * th, td {
+    height: 26px;
+  }
+  * img {
+    height: auto;
+    vertical-align: middle;
+    width: 20%;
+    cursor: pointer;
+    &:not(:last-child) {
+      padding-right: 3px;
+    }
+  }
+}
+
+.still {
+  color: $danger;
+}
+
+table.default tbody td {
+  &.index,
+  &:nth-last-child(1),
+  &:nth-last-child(2),
+  &:nth-last-child(3) {
+    text-align: center;
+  }
+
+}

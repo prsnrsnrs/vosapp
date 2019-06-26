@@ -1,0 +1,87 @@
+@charset "utf-8";
+@import "../../../assets/scss/import/style";
+
+table {
+  thead th {
+    text-align: left;
+    padding: 3px 5px;
+    font-weight: bold !important;
+  }
+}
+
+span.required {
+  color: #D9534F;
+  display: inline-block;
+}
+
+table.format_header {
+  tbody th {
+    text-align: left;
+    padding-left: 10px;
+  }
+  tbody td {
+    text-align: left;
+  }
+  input {
+    margin-right: 10px;
+    padding-left: 10px;
+    &.format_name {
+      width: 300px;
+    }
+    &.col, &.row {
+      width: 100px;
+    }
+    &.file {
+      border: none;
+    }
+    &.file:not(.has_error) {
+      background-color: $white;
+    }
+  }
+}
+
+table.format_detail {
+  margin-top: 10px;
+  font-size: 0.9em;
+  border: none !important;
+
+  thead, tbody {
+    display: block;
+  }
+  tbody {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 400px;
+  }
+  tr td,
+  tr th {
+    &:nth-child(1) {
+      width: 50px;
+    }
+    &:nth-child(2) {
+      width: 170px;
+    }
+    &:nth-child(3) {
+      width: 80px;
+    }
+    &:nth-child(4) {
+      width: 350px;
+    }
+    &:nth-child(5) {
+      width: 80px;
+    }
+    &:nth-child(6) {
+      width: 400px;
+    }
+  }
+  tr.title_th th {
+    background-color: $default!important;
+  }
+  input[type="text"] {
+    width: 50px;
+  }
+  select {
+    margin: 5px;
+    width: 210px;
+  }
+}

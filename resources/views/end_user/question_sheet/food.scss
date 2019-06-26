@@ -1,0 +1,94 @@
+@charset "utf-8";
+@import "../../../assets/scss/import/style";
+
+div.user_info {
+  border: none;
+  th {
+    padding: 10px 0;
+  }
+}
+button {
+  font-size: 1.2em;
+  padding: 0 30px;
+}
+
+.danger {
+  color: $danger;
+}
+
+.user_info,
+.question_sheet table {
+  margin-bottom: 15px;
+}
+
+.under_line {
+  text-decoration: underline;
+}
+
+.question_sheet table {
+  th {
+    text-align: left;
+  }
+  tr.detail {
+    th {
+      background-color: $input_backcolor;
+      color: $black;
+      text-align: center;
+    }
+  }
+  input,
+  textarea {
+    width: 98%;
+  }
+  textarea {
+    height: 8em
+  }
+  label {
+    margin: 0 5px;
+  }
+  td  p,
+  .answer {
+    margin: 10px 0;
+  }
+  .symptom  {
+    div {
+      width: 90%;
+      margin: auto;
+    }
+    label {
+      display: inline-block;
+      margin: 5px 0;
+      width: 77px;
+    }
+  }
+}
+
+.agreement {
+  .panel {
+    margin-bottom: 30px;
+    width: 100%;
+    .title {
+      border: none;
+      border-bottom: 1px solid $border_default;;
+    }
+    .body {
+      width: 97%;
+    }
+    .footer {
+      background-color: $error;
+      border-top: 1px solid $border_default;;
+      color: $white;
+      text-align: center;
+      padding: 5px 0;
+      .checkbox::before {
+        border: 1px solid $white;
+      }
+    }
+  }
+}
+
+.checkbox::before {
+  @extend .checkbox::before;
+  border: 1px solid $black !important;
+  background-color: $white;
+}

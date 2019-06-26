@@ -1,0 +1,9 @@
+@charset "utf-8";
+@import "../../assets/scss/import/style";
+
+.danger {
+  padding: 20px;
+}
+.error {
+  border: 2px solid $danger;
+}

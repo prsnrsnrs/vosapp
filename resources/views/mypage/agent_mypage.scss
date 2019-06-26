@@ -1,0 +1,69 @@
+@charset "utf-8";
+@import "../../assets/scss/import/style";
+
+$check_mark: #3498db;
+$input_text: #DEEBF7;
+$list_mark: #0095cc;
+
+/*  マイページ画面 */
+.mypage {
+  text-align: center;
+}
+
+.panel {
+  min-height: 463px;
+  * li span {
+    border-left: 5px solid $list_mark;
+    padding-left: 8px;
+    display: block;
+  }
+}
+.mypage_btn {
+  background-color: $border_default;
+  border: 2px solid $border_default;
+  width: 100%;
+  height: 40px;
+  font-size: 1.5em;
+  margin: 15px 0px;
+  .cruise_reservation{
+    height: 29px;
+    margin-left: -10px;
+  }
+}
+.left_block, .right_block {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+}
+
+.left_block .panel .body {
+  & > div {
+    padding: 0px 23px 20px;
+  }
+  * li {
+    margin-bottom: 10px;
+    list-style: none;
+  }
+  ul {
+    padding: 0;
+  }
+}
+
+.default {
+  border-bottom: 1px solid $border_default;
+  height: 250px;
+}
+
+.right_block .panel .body {
+  padding: 0px 5px 0px 5px;
+}
+
+.input_text_form {
+  width: 95%;
+  height: 30px;
+  padding-left: 10px;
+}
+
+dd {
+  margin: 0px;
+}

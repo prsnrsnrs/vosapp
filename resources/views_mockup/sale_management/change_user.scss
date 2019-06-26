@@ -1,0 +1,31 @@
+@charset "utf-8";
+@import "../_style";
+
+/* ユーザー変更画面 */
+table {
+  thead th{
+    text-align: left;
+    font-weight: bold !important;
+    height: 25px;
+  }
+  tbody th {
+    text-align: left;
+  }
+  .radio{
+    margin-left: 15px;
+  }
+  input[type="text"] {
+    width: 300px;
+  }
+}
+
+.button_create{
+  margin-top: 10px;
+  button{
+    font-size: 1.2em;
+    padding: 0px 30px;
+  }
+}
+a {
+  text-decoration: none !important;
+}

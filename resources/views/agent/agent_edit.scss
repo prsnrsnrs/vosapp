@@ -1,0 +1,44 @@
+@charset "utf-8";
+@import "../../assets/scss/import/style";
+
+/* 販売店新規追加画面 */
+.default {
+  thead th {
+    font-weight: bold;
+    text-align: left;
+  }
+  tbody th {
+    text-align: left;
+  }
+  * td {
+    height: 20px;
+    text-align: left;
+    padding-right: 10px;
+    .long_text{
+      width: 100%;
+    }
+    .middle_text{
+      width: 100%;
+    }
+    .short_text{
+      width: 50%;
+    }
+    .address_number_danger{
+      display: block;
+      font-size: 13px;
+    }
+  }
+
+  select{
+    width: 100px;
+    height: 30px;
+  }
+  .radio{
+    margin-left: 15px;
+  }
+}
+span.required
+{
+  color: #D9534F;
+  display: inline-block;
+}

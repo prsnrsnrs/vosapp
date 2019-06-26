@@ -1,0 +1,46 @@
+@charset "utf-8";
+@import "../_style";
+@import "~sweetalert2/dist/sweetalert2.min.css";
+
+/* 販売情報＆ユーザー情報画面 */
+thead th {
+  text-align: left;
+  font-weight: bold !important;
+}
+.shop_table {
+  label {
+    float: right;
+    &:hover {
+      cursor: pointer;
+    }
+    a:link {
+      color: $white;
+    }
+    a:visited {
+      color: $white;
+    }
+    a.desc::after {
+      content: "▼";
+    }
+    a.asc::after {
+      content: "▲";
+    }
+  }
+  th {
+    @extend td;
+    padding: 0 5px;
+  }
+  td {
+    text-align: left;
+    height: 20px;
+  }
+}
+.user_table {
+  margin-top: 10px;
+  tbody {
+    td {
+      text-align: center;
+    }
+  }
+}
+

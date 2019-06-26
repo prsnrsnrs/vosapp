@@ -1,0 +1,12 @@
+@charset "utf-8";
+@import "../../style";
+
+.name {
+  border-right: none !important;
+  border-left: none !important;
+}
+table.venus thead th{
+  height: 25px;
+  text-align: left;
+  font-weight: bold;
+}

@@ -1,0 +1,26 @@
+@charset "utf-8";
+@import "../_style";
+@import "~sweetalert2/dist/sweetalert2.min.css";
+
+/* 割引券情報入力画面 */
+.input_area table tbody * td:not(:nth-child(3)) {
+  text-align: center;
+}
+
+table * td:last-child label{
+  display: none;
+}
+
+input {
+  width: 18%;
+}
+
+.button_ticket {
+  margin-top: 10px;
+  text-align: right;
+}
+
+button {
+  padding: 0px 30px 0px 30px;
+  font-size: 1.2em;
+}

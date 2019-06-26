@@ -1,0 +1,19 @@
+@charset "utf-8";
+@import "../_style";
+
+h3 {
+  font-size: 1.7em;
+}
+
+main {
+  width: 60%;
+  margin: auto;
+}
+.panel {
+  width: 100%;
+}
+table {
+  td, th {
+    height: 1.5em;
+  }
+}

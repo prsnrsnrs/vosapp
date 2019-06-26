@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import "../../assets/scss/import/style";
+
+h3 {
+  font-size: 1.7em;
+}
+
+.search {
+  width: 90%;
+  margin: auto;
+}
+
+.panel{
+  margin: auto;
+  width:80%;
+  .main {
+    margin: auto;
+    width: 80%;
+  }
+}
+
+
+table{
+  margin: 30px 0;
+  width: 100%;
+  td {
+    height: 3em;
+  }
+  tfoot tr td {
+    padding: 20px 0;
+  }
+}
+
+button {
+  font-size: 1.2em;
+  padding: 0 30px;
+  margin-top: 5px;
+}
+
+.button_bar {
+  text-align: center;
+  margin: 24px 0;
+}
+
+.ssl_info {
+  text-align: center;
+  ul {
+    padding: 0;
+  }
+  li {
+    width: auto;
+    display: inline-block;
+  }
+  small {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+  }
+  img {
+    display: inline;
+    vertical-align: middle;
+  }
+}
+

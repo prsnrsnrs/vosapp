@@ -1,0 +1,55 @@
+@charset "utf-8";
+@import "../../style";
+@import "~sweetalert2/dist/sweetalert2.min.css";
+
+div.user_info {
+  border: none;
+  th {
+    padding: 10px 0;
+  }
+}
+
+button {
+  font-size: 1.2em;
+  padding: 0 30px;
+}
+
+.danger {
+  color: $danger;
+}
+
+.user_info,
+.question_sheet table {
+  margin-bottom: 15px;
+}
+
+.under_line {
+  text-decoration: underline;
+}
+
+.panel {
+  width:100%;
+  .title {
+    border: none;
+    border-bottom: 1px solid $border_default;
+  }
+}
+
+.file_select {
+  .file {
+    border: none;
+  }
+}
+
+.file_upload {
+  p {
+    margin: 0;
+  }
+}
+
+ul, li {
+  display: inline-block;
+}
+ul {
+  width: 100%;
+}

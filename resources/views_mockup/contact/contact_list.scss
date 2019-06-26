@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import "../_style";
+@import "~jquery-ui/themes/base/datepicker.css";
+
+/* ご連絡一覧画面 */
+table {
+  thead th {
+    font-weight: bold !important;
+    height: 25px;
+    text-align: left;
+  }
+}
+.search_form {
+  table {
+    th {
+      text-align: left;
+    }
+  }
+  .long_text {
+    width: 280px;
+    margin-right: 20px;
+  }
+  .middle_text {
+    width: 141px;
+  }
+  .calendar label:after {
+    content: url("/images/calendar.png");
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+    left: 6px;
+  }
+  button {
+    font-size: 1.2em;
+    padding: 0px 30px;
+    margin: 5px 0px;
+  }
+  .search_warning {
+    margin-left: 10px;
+  }
+}
+.result_list {
+  table td {
+    text-align: center;
+  }
+  table td:not(:nth-child(1), :nth-child(2), :nth-child(5)) {
+    text-align: left;
+  }
+  .dothesort span {
+    float: right;
+  }
+}
+

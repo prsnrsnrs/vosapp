@@ -1,0 +1,21 @@
+@charset "utf-8";
+@import "../../assets/scss/import/style";
+
+button {
+  font-size: 1.2em;
+  padding: 0 30px;
+}
+.headline {
+  margin-bottom: 10px;
+  table thead th {
+    background-color: $default;
+  }
+}
+.list table {
+  border: none;
+  margin-bottom: 10px;
+  tfoot.total th {
+    background-color: $title;
+    height: 41px;
+  }
+}

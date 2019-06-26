@@ -1,0 +1,49 @@
+@charset "utf-8";
+@import "../../../assets/scss/import/style";
+
+$list_mark: #0095cc;
+
+.panel {
+  width: 80%;
+  margin: auto;
+}
+
+.body {
+  dl {
+    text-align: left;
+    margin: 20px 35px 20px 35px;
+    dt {
+      border-left: 5px solid $list_mark;
+      padding-left: 8px;
+      display: block;
+    }
+  }
+
+  .agree_bar {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    button {
+      padding: 0px 30px 0px 30px;
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .checkbox{
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    .register_button{
+      display: none;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+}
+
+.checkbox::before {
+  top: 5px;
+}
+label.checkbox::after {
+  top: 8px!important;
+}

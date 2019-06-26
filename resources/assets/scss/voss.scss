@@ -1,0 +1,621 @@
+@charset "utf-8";
+// 変数
+$white: #fff;
+$input_backcolor: #E0ECF1;
+$hover_rows: #DFF2FC;
+//$hover: #ccc;
+$gray: #A9A9A9;
+$black: #000;
+//$datepicker: #42a5f5;
+$default: #5B9BD5;
+$header_light: #0092CA;
+$border_default: #41719C;
+$wizard_action: #004896;
+$header_dark: #004896;
+$waiting: #f6ffcf;
+$venus: #C5E0B4;
+$border_venus: #36AA70;
+$success: #5CB85C;
+$warning: #F0AD4E;
+$danger: #D9534F;
+$error: #ff9381;
+$popular: #ff7f7f;
+$title: #ED7D31;
+$has_error: #FFDACE;
+
+%font_type {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "Yu Gothic", "メイリオ", "Meiryo", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+// 余白
+%space {
+  padding: 0 5px;
+}
+
+button {
+  @extend %font_type;
+  &:hover {
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+  }
+  img {
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 5px;
+  }
+}
+
+input {
+  @extend %font_type;
+}
+
+textarea {
+  @extend %font_type;
+}
+
+select {
+  @extend %font_type;
+}
+
+table {
+  th, td {
+    @extend %space;
+  }
+}
+
+p {
+  @extend %space;
+}
+
+a {
+  color: #0000ff;
+}
+
+a:visited {
+  color: #0000ff;
+}
+
+/* 基本レイアウト部分 */
+body {
+  @extend %font_type;
+  width: 1240px;
+  margin: 0 auto;
+}
+
+nav {
+  color: $gray;
+  div {
+    display: inline-block;
+  }
+}
+
+header {
+  width: 100%;
+  .left_info {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    width: 30%;
+    height: 48px;
+  }
+  .right_info {
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    width: 69%;
+    height: 48px;
+
+    .login_data {
+      position: relative;
+      text-align: right;
+      p {
+        padding: 0;
+        margin: 0;
+      }
+      .name:after {
+        content: '様';
+        padding-left: 5px;
+      }
+      a {
+        position: absolute;
+        top: 80px;
+        right: 0;
+      }
+    }
+  }
+  .line {
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(180deg, $header_dark, $header_light);
+  }
+  &.agent_test .line {
+    background: linear-gradient(180deg, #ff0023, #feb1b1);
+  }
+}
+
+main {
+  min-height: 550px;
+  display: block; // IE中央寄せ対応
+  width: 98%;
+  margin: 0 auto;
+}
+
+.button_bar {
+  width: 98%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-left: 0 !important;
+  button {
+    padding: 0 30px;
+    font-size: 1.2em;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+footer {
+  width: 100%;
+  bottom: 0;
+  p {
+    text-align: center;
+    background-color: $header_dark;
+    color: $white;
+    font-size: small;
+  }
+}
+
+/***************
+ * 各部品　　　*
+ **************/
+// ボタン
+button {
+  border-radius: 5px;
+  //border: none;
+  color: white;
+
+  &.default {
+    background-color: $gray;
+    border: 2px solid $gray;
+  }
+  &.done {
+    background-color: $success;
+    border: 2px solid $success;
+  }
+  &.add {
+    background-color: $default;
+    border: 2px solid $default;
+  }
+  &.edit {
+    background-color: $default;
+    border: 2px solid $default;
+  }
+  &.back {
+    background-color: $white;
+    color: $black;
+    border: 2px solid $gray;
+    //box-shadow: 0 0 0 2px $gray inset;
+  }
+  &.delete {
+    background-color: $danger;
+    border: 2px solid $danger;
+  }
+  &.success {
+    background-color: $success;
+    border: 2px solid $success;
+  }
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+// ラベルアイコン
+label.icon {
+  border-radius: 5px;
+  padding: 3px;
+  border: none;
+  color: white;
+  &.default {
+    background-color: $popular;
+  }
+  &.done {
+    background-color: $popular;
+  }
+  &.add {
+    background-color: $default;
+  }
+  &.edit {
+    background-color: $default;
+  }
+  &.back {
+    background-color: $gray;
+  }
+  &.delete {
+    background-color: $danger;
+  }
+  &.success {
+    background-color: $success;
+  }
+}
+
+// IE：遊ゴシック対応
+@media all and (-ms-high-contrast: none) {
+  label.icon, button {
+    padding-top: 0.2em !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+// チェックボックス
+.check_style {
+  display: none;
+}
+
+.checkbox {
+  position: relative;
+  display: inline-block;
+  padding: 3px 0 0 20px;
+  &::before {
+    border: 1px solid $black;
+    border-radius: 5px;
+    position: absolute;
+    content: '';
+    top: -10px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+input[type="radio"]:checked + .checkbox::after,
+input[type="checkbox"]:checked + .checkbox::after {
+  position: absolute;
+  content: '';
+  top: -7px;
+  left: 2px;
+  width: 12px;
+  height: 5px;
+  border-left: 1px solid $black;
+  border-bottom: 1px solid $black;
+  transform: rotate(-45deg);
+}
+
+// 入力項目
+input, select {
+  border: 1px solid $black;
+  border-radius: 5px;
+  padding: 3px 0 3px 5px;
+}
+
+.input {
+  @extend input;
+  border: 1px solid $border_default;
+  background-color: $input_backcolor;
+}
+
+.input_venus {
+  @extend input;
+  border: 1px solid $border_venus;
+  background-color: $venus;
+}
+
+.has_error {
+  background-color: $has_error;
+}
+
+// アラート
+.swal2-buttonswrapper button {
+  &.swal2-confirm {
+    background-color: $success !important;
+    border-left-color: $success !important;
+    border-right-color: $success !important;
+  }
+  &.swal2-cancel {
+    background-color: $danger !important;
+  }
+}
+
+/**************
+ * 共通パーツ *
+ **************/
+
+// パネル
+.panel {
+  border: 1px solid $border_default;
+  width: 350px;
+  margin: 10px 0;
+  .header {
+    background-color: $default;
+    border-bottom: 1px solid $border_default;
+    color: $white;
+    font-weight: bold;
+    height: 30px;
+    padding-top: 5px;
+  }
+  .body {
+    text-align: left;
+  }
+  .title {
+    border-bottom: 1px solid $border_default;
+    background-color: $title;
+    color: $white;
+    padding: 3px 7px;
+  }
+}
+
+//検索画面の「件中 件～件目を表示」のレイアウト
+.count_from_to {
+  text-align: right;
+  margin-bottom: -5px;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+//検索結果が0件の時のレイアウト
+.list_empty {
+  height: 35px;
+  text-align: center;
+}
+
+.panel_venus {
+  @extend .panel;
+  border: 1px solid $border_venus;
+  .header {
+    background-color: $border_venus;
+    border-bottom: 1px solid $border_venus;
+  }
+}
+
+// ページネーション
+.pagination {
+  list-style: none;
+  text-align: right;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline-block;
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+}
+
+// クルーズプラン情報
+.course {
+  border: 1px solid $border_default;
+  display: flex;
+  img {
+    width: 50px;
+  }
+}
+
+// ヘッダーメニュー
+.course_menu {
+  display: flex;
+  width: 100%;
+  & > div, a {
+    background-image: url("/images/cruise_menu_back_ground.jpg");
+    border: 1px solid $border_default;
+    width: 20%;
+    text-decoration: none;
+    &:hover {
+      opacity: 0.8;
+    }
+    dl {
+      font-size: 0.9em;
+      margin: 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    img {
+      height: 52px;
+      width: 52px;
+      vertical-align: middle;
+    }
+  }
+}
+
+//  お知らせ
+.info_variable {
+  display: none;
+}
+
+.info {
+  border: 1px solid $border_default;
+  min-height: 52px;
+  text-align: left;
+  margin: 5px auto;
+
+  p {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 82em;
+    margin: 4px;
+    padding: 0;
+    .icon_info {
+      vertical-align: top;
+    }
+    &:first-child::before {
+      display: inline-block;
+      width: 50px;
+      height: 39px;
+      content: '';
+      background-size: contain;
+      vertical-align: middle;
+      margin-left: 5px;
+
+    }
+    &.icon_info:first-child::before {
+      background-image: url("/images/info.png");
+      background-repeat: no-repeat;
+      width: 36px;
+      height: 36px;
+    }
+    &.icon_error:first-child::before {
+      background-image: url("/images/error.png");
+      background-repeat: no-repeat;
+      width: 36px;
+      height: 36px;;
+    }
+    &.icon_success:first-child::before {
+      background-image: url("/images/success.png");
+      background-repeat: no-repeat;
+      width: 36px;
+      height: 36px;
+    }
+    &.icon_warning:first-child::before {
+      background-image: url("/images/warning.png");
+      background-repeat: no-repeat;
+      width: 36px;
+      height: 36px;
+    }
+    &.icon_cruise:first-child::before {
+      background-image: url("/images/boat.png");
+      background-repeat: no-repeat;
+      width: 36px;
+      height: 36px;
+    }
+    &.icon_warning span {
+      color: $danger;
+    }
+    &.message span {
+      display: block;
+      margin: 4px 0;
+    }
+    &.message span.error,
+    &.message span.warning {
+      color: $danger;
+    }
+    &.message span.success {
+      color: $success;
+    }
+  }
+}
+
+// ウィザード
+.wizard {
+  margin-bottom: 5px;
+  overflow: hidden;
+  width: 100%;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    background: $gray;
+    padding: 10px 37px 10px 20px;
+    float: left;
+    width: 170px;
+    text-decoration: none;
+    position: relative;
+    margin-right: 24px;
+  }
+  li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5em;
+    border-width: 1.6em 0 1.6em 1em;
+    border-style: solid;
+    border-color: $gray $gray $gray transparent;
+    left: -1em;
+  }
+  li::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5em;
+    border-top: 1.5em solid transparent;
+    border-bottom: 1.5em solid transparent;
+    border-left: 1em solid $gray;
+    right: -1em;
+  }
+  li:last-child {
+    width: 154px;
+    margin: 0;
+  }
+  li:last-child:after {
+    content: none;
+  }
+  .current {
+    background-color: $wizard_action;
+    color: $white;
+  }
+  .current::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5em;
+    border-width: 1.5em 0 1.5em 1em;
+    border-style: solid;
+    border-color: $wizard_action $wizard_action $wizard_action transparent;
+    left: -1em;
+  }
+  .current::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5em;
+    border-top: 1.5em solid transparent;
+    border-bottom: 1.5em solid transparent;
+    border-left: 1em solid $wizard_action;
+    right: -1em;
+  }
+}
+
+// ソート
+a.sort {
+  &:link {
+    color: $white;
+  }
+  &:visited {
+    color: $white;
+  }
+  &.desc::after {
+    content: "▼";
+  }
+  &.asc::after {
+    content: "▲";
+  }
+}
+
+// ￥マーク
+.price_list .price {
+  dd:before {
+    content: "\0a5";
+  }
+}
+
+.container {
+  margin-top: 10px;
+}
+
+// 二重サブミット防止用
+.loading {
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+// disabledのスタイル
+button:disabled,
+select:disabled,
+option:disabled,
+input:disabled,
+a.disabled {
+  cursor: not-allowed;
+  opacity: 0.8 !important;
+}
+
+button:disabled {
+  background-color: $gray;
+  border: 2px solid $gray;
+}
+

@@ -1,0 +1,27 @@
+@charset "utf-8";
+@import "../_style";
+@import "~sweetalert2/dist/sweetalert2.min.css";
+
+select {
+  width: 180px;
+}
+
+.list table {
+  border: none;
+  margin-bottom: 10px;
+  tfoot th {
+    background-color: $title !important;
+    height: 41px;
+  }
+}
+.list table {
+  tbody * td:not(:nth-child(4), :nth-child(9), :nth-child(10)) {
+    text-align: center;
+  }
+
+}
+select.input {
+  width: 100%;
+}
+
+

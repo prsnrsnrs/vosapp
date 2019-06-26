@@ -1,0 +1,22 @@
+@charset "utf-8";
+@import "../_style";
+@import "~sweetalert2/dist/sweetalert2.min.css";
+
+button {
+  font-size: 1.2em;
+  padding: 0 30px;
+}
+.headline {
+  margin-bottom: 10px;
+  table thead th {
+    background-color: $default;
+  }
+}
+.list table {
+  border: none;
+  margin-bottom: 10px;
+  tfoot.total th {
+    background-color: $title;
+    height: 41px;
+  }
+}

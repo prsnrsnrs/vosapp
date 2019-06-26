@@ -1,0 +1,28 @@
+@charset "utf-8";
+@import "../../../assets/scss/import/style";
+
+/* ご連絡閲覧画面 */
+.panel {
+  width: 100%;
+  .title {
+    font-weight: bold;
+  }
+}
+
+.reservation_contact_detail table {
+  thead th {
+    font-weight: bold;
+    height: 25px;
+  }
+  tbody th,
+  tbody td {
+    height: 30px;
+    padding: 0 8px;
+    word-break: break-all;
+  }
+}
+
+.panel {
+  margin-top: 10px;
+}
+

@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import "../style";
+
+$list_mark: #0095cc;
+
+/*  マイページ画面 */
+.mypage {
+  text-align: center;
+}
+.panel {
+  min-height: 465px;
+}
+.left_block, .center_block, .right_block {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+}
+.left_block {
+  .body {
+    text-align: left;
+  }
+  .step {
+    text-align: left;
+    margin: 0px 0px 10px 15px;
+  }
+  img {
+    height: 30px;
+    width: 30px;
+    margin-left: 35px;
+  }
+  .guide {
+    text-align: center;
+    button {
+      background-color: $border_default;
+      padding: 5px 30px;
+      margin: 15px 0px;
+    }
+  }
+}
+.center_block {
+  .default {
+    padding-left: 15px;
+    height: 120px;
+  }
+  .user_info {
+    padding-left: 15px;
+  }
+  p {
+    border-top: 1px solid $border_default;
+  }
+  ul {
+    padding: 0;
+  }
+  li {
+    margin-bottom: 10px;
+    list-style: none;
+  }
+  li span {
+    border-left: 5px solid $list_mark;
+    padding-left: 8px;
+    display: block;
+  }
+}
+.right_block {
+  .body {
+    padding: 0px 10px;
+  }
+  dd {
+    margin: 0px;
+  }
+  .venus {
+    text-align: center;
+    button {
+      background-color: $border_venus;
+      width: 80%;
+      height: 35px;
+      margin: 20px 0px;
+    }
+  }
+}
+
+
+

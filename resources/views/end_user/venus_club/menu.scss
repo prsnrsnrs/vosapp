@@ -1,0 +1,59 @@
+@charset "utf-8";
+@import "../../../assets/scss/import/style";
+
+.menu {
+  text-align: center;
+}
+.left_block, .right_block {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+}
+.left_block .panel .body {
+  padding: 0px 30px 20px 30px;
+  min-height: 300px;
+  * li span {
+    border-left: 5px solid $border_venus;
+    padding-left: 8px;
+    display: block;
+  }
+  * li {
+    margin-bottom: 20px;
+    list-style: none;
+  }
+  ul {
+    padding: 0;
+  }
+  .net_contract {
+    background-color: $border_venus;
+    width: 100%;
+    height: 40px;
+    margin-top: 100px;
+  }
+}
+.right_block .panel .body {
+  padding: 0px 10px;
+  min-height: 400px;
+}
+.venus_icon {
+  height: 60px;
+  img {
+    width: 150px;
+  }
+}
+.ssl_info {
+  small {
+    display:inline-block;
+    vertical-align: middle;
+    width: 50%;
+    text-align: left;
+  }
+  img {
+    display: inline;
+    vertical-align: middle;
+  }
+}
+dd {
+  margin: 0px;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,12 @@
+@charset "utf-8";
+@import "../../../assets/scss/import/style";
+
+.default {
+  thead th {
+    text-align: left;
+    height: 25px;
+  }
+  tbody td {
+    text-align: right;
+  }
+}

@@ -1,0 +1,57 @@
+@charset "utf-8";
+@import "../../style";
+
+.name_text {
+  width: 300px;
+}
+p.danger {
+  display: inline-block;
+}
+span.required {
+  color: $danger;
+  display: inline-block;
+}
+.name_text {
+  width: 46%;
+}
+.club_id {
+  width: 40%;
+}
+.year {
+  width: 70px;
+  margin: 0px;
+}
+.month_day {
+  width: 50px;
+  @extend .year;
+}
+.zipcode {
+  width: 100px;
+}
+.zip_search {
+  width: 90px;
+  margin-left: 10px;
+  font-size: 0.8em;
+}
+.issue_day,
+.revocation {
+  width: 190px;
+}
+label.calender::after {
+  content: url("/images/calendar.png");
+  cursor: pointer;
+  position: relative;
+  top: 5px;
+  left: 2px;
+}
+
+input {
+  width: 95%;
+}
+input[type='tel'],
+input[type='number'] {
+  width: 20%;
+}
+input[type="radio"] {
+  width: 40px;
+}

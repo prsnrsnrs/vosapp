@@ -1,0 +1,95 @@
+@charset "utf-8";
+@import "../../_style";
+$check_mark: #3498db;
+/*  ログイン画面 */
+.login {
+  text-align: center;
+}
+.left_block, .right_block {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+}
+.left_block .panel .body {
+  padding: 0px 30px 20px 30px;
+  dt {
+    margin-bottom: 10px;
+  }
+  .forget_password{
+    margin-top: 10px;
+  }
+  .login_btn {
+    background-color: $border_default;
+    width: 100%;
+    height: 40px;
+    font-size: 1.8em;
+    margin-top: 50px;
+  }
+}
+.ssl_info {
+  small {
+    display:inline-block;
+    vertical-align: middle;
+    width: 50%;
+    text-align: left;
+  }
+  img {
+    display: inline;
+    vertical-align: middle;
+  }
+}
+.right_block .panel .body {
+  padding: 0px 10px 0px 10px;
+  button{
+    width: 80%;
+    height: 40px;
+    font-size: 1.1em;
+    margin: 10px 0 10px 0;
+  }
+  .guidance_btn{
+    background-color: $border_default;
+  }
+  dd {
+    text-align: center;
+  }
+}
+.input_text_form {
+  width: 95%;
+  height: 30px;
+  padding-left: 10px;
+}
+dd {
+  margin: 0px;
+}
+
+// チェックボックス
+.remember {
+  display: none;
+}
+.check {
+  position: relative;
+  display: inline-block;
+  padding: 3px 0px 0px 20px;
+  &::before {
+    border: 1px solid $border_default;
+    background-color: $input_backcolor;
+    border-radius: 3px;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+  }
+}
+input[type="checkbox"]:checked + .check::after {
+  position: absolute;
+  content: '';
+  top: 7px;
+  left: 3px;
+  width: 11px;
+  height: 5px;
+  border-left: 2px solid $check_mark;
+  border-bottom: 2px solid $check_mark;
+  transform: rotate(-45deg);
+}

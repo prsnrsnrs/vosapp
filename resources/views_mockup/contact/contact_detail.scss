@@ -1,0 +1,30 @@
+@charset "utf-8";
+@import "../_style";
+
+/* ご連絡閲覧画面 */
+.panel {
+  width: 100%;
+  .title {
+    font-weight: bold;
+  }
+}
+
+.contact_detail table {
+  thead th {
+    font-weight: bold ;
+    height: 25px;
+  }
+  tbody th,
+  tbody td{
+    height: 30px;
+    padding: 0 8px;
+  }
+}
+
+.panel {
+  margin-top: 10px;
+  p {
+    line-height: 38px;
+  }
+}
+

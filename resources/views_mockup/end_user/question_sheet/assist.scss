@@ -1,0 +1,29 @@
+@charset "utf-8";
+@import "../../style";
+
+div.user_info {
+  border: none;
+  th {
+    padding: 10px 0;
+  }
+}
+
+.danger {
+  color: $danger;
+}
+
+.user_info,
+.question_sheet table {
+  margin-bottom: 15px;
+}
+
+.under_line {
+  text-decoration: underline;
+}
+
+.question_sheet textarea {
+    height: 14em;
+  width: 100%;
+  padding: 0;
+}
+

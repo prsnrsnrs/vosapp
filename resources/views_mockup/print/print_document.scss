@@ -1,0 +1,52 @@
+@charset "utf-8";
+@import "../_style";
+@import "~jquery-ui/themes/base/datepicker.css";
+
+.search_btn button {
+  margin: 10px 0;
+  padding: 0px 30px;
+  font-size: 1.2em;
+}
+.search_form {
+  table {
+    .boatmember input {
+      width: 278px;
+    }
+    select {
+      width: 350px;
+    }
+    * label:after {
+      content: url("/images/calendar.png");
+      cursor: pointer;
+      position: relative;
+      top: 5px;
+      left: 2px;
+    }
+  }
+}
+thead th {
+  text-align: left;
+  font-weight: bold !important;
+  height: 25px;
+}
+.result_list {
+  table {
+    border: none;
+    thead,
+    tbody {
+      display: block;
+    }
+    tbody {
+      overflow-y: scroll;
+      height: 285px;
+
+      td:not(:nth-child(4)) {
+        text-align: center;
+      }
+    }
+  }
+  .data_title th{
+    background-color: $default !important;
+    text-align: center !important;
+  }
+}

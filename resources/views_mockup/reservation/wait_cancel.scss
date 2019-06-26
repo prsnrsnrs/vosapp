@@ -1,0 +1,23 @@
+@charset "utf-8";
+@import "../_style";
+@import "~sweetalert2/dist/sweetalert2.min.css";
+
+
+button {
+  font-size: 1.2em;
+  padding: 0 30px;
+}
+table.default {
+  margin: 20px 0;
+  tbody td {
+    text-align: center;
+  }
+  * button {
+    padding: 0 12px;
+  }
+}
+
+.name input {
+  width: 40%;
+}
+

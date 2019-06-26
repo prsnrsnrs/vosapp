@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/* ご連絡閲覧画面 */
+
+// 変数
+$border_default: #41719C;
+$title: #ED7D31;
+$default: #5B9BD5;
+$success: #5CB85C;
+$white: #fff;
+
+//文字
+.left {
+  text-align: left;
+}
+
+.button_bar{
+  margin-bottom: 5px;
+}
+
+//テーブル
+table.default {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid $border_default;
+  width: 100%;
+  th {
+    color: $white;
+    font-weight: normal;
+    border: 1px solid $border_default;
+  }
+  thead th {
+    background-color: $title;
+  }
+  tbody th {
+    background-color: $default;
+  }
+  tfoot th {
+    background-color: $success;
+  }
+  td {
+    border: 1px solid $border_default;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .center {
+    text-align: center;
+  }
+  .left {
+    text-align: left;
+  }
+  .right {
+    text-align: right;
+  }
+}
+
+.reservation_contact_detail_for_aps table {
+  thead th {
+    font-weight: bold;
+    height: 25px;
+  }
+  tbody th,
+  tbody td {
+    height: 30px;
+    padding: 0 8px;
+    word-break: break-all;
+  }
+}
+
+
+.panel {
+  width: 100%;
+  margin-top: 10px;
+  .title {
+    font-weight: bold;
+  }
+}

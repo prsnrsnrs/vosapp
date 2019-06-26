@@ -1,0 +1,32 @@
+@charset "utf-8";
+@import "../style";
+@import "~sweetalert2/dist/sweetalert2.min.css";
+
+.panel {
+  width: 100%;
+  .body {
+    padding: 0px 20px 10px 20px;
+  }
+}
+table {
+  margin-bottom: 20px;
+  td input {
+    border: none;
+    background-color: $white;
+  }
+}
+
+h3 {
+  margin: 10px 0px;
+}
+.step_btn {
+  text-align: center;
+  button {
+    padding: 0px 30px;
+    font-size: 1.2em;
+  }
+}
+span.required {
+  color: $danger;
+  display: inline-block;
+}

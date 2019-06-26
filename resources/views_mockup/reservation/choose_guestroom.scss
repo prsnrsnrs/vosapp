@@ -1,0 +1,52 @@
+@charset "utf-8";
+@import "../_style";
+
+/* 客室タイプ変更画面 */
+table {
+  td.description {
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+  }
+  dl {
+    display: table;
+    width: 87%;
+    margin: auto;
+    dt, dd {
+      display: table-cell;
+    }
+    dd {
+      text-align: right;
+    }
+  }
+  button {
+    padding: 0 8px;
+  }
+}
+.wait_cancel {
+  font-size: 1em;
+}
+.confirm_time {
+  text-align: right;
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+.room_area {
+  table {
+    text-align: center;
+  }
+
+  .suite_room {
+    width: 75%;
+    height: auto;
+  }
+
+  .deluxe_room {
+    width: 75%;
+    height: auto;
+  }
+}
+button {
+  padding: 0 30px;
+  font-size: 1.2em;
+}

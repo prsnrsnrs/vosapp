@@ -1,0 +1,19 @@
+@charset "utf-8";
+@import "../../../assets/scss/import/style";
+
+button {
+  padding: 0px 20px;
+}
+.add_button_bar {
+  margin: 10px 0px;
+  text-align: right;
+  width: 100%;
+  button {
+    font-size: 1.2em;
+  }
+}
+table thead th {
+  text-align: left;
+  font-weight: bold !important;
+  height: 25px;
+}

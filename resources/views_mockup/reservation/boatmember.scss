@@ -1,0 +1,118 @@
+@charset "utf-8";
+@import "../_style";
+@import "~sweetalert2/dist/sweetalert2.min.css";
+
+button {
+  font-size: 1.2em;
+}
+
+.middle {
+  margin-left: 0px;
+}
+
+select {
+  width: 180px;
+  margin: 5px 0;
+}
+
+table .customer_list th {
+  height: 35px;
+}
+table.customer_list {
+  thead th {
+    text-align: center;
+  }
+  tbody td:not(:nth-child(5), :nth-child(6)) {
+    text-align: center;
+  }
+}
+.tab_button {
+  margin: 3px 0px;
+  a {
+    text-decoration: none;
+  }
+  button {
+    width: 600px;
+  }
+  .tab {
+    border-radius: 10px 10px 0px 0px / 10px 10px 0px 0px;
+    width: 150px;
+  }
+}
+
+.customer_name {
+  font-size: 1.5em;
+}
+
+.customer_details {
+  margin: 20px 0;
+  th {
+    text-align: center;
+    &.vertical {
+      width: 5%;
+      padding: 0 13px;
+    }
+  }
+  td {
+    text-align: left;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+  }
+  input {
+    width: 95%;
+  }
+  input[type="radio"] {
+    width: auto;
+  }
+  label {
+    margin-right: 10px;
+  }
+  p.danger {
+    display: inline-block;
+  }
+  span.required {
+    color: $danger;
+    display: inline-block;
+  }
+  .name_text {
+    width: 46%;
+  }
+  .year {
+    width: 70px;
+    margin: 0px;
+  }
+  .month_day {
+    width: 50px;
+    @extend .year;
+  }
+  .zipcode {
+    width: 100px;
+  }
+  .zip_search {
+    width: 90px;
+    margin-left: 10px;
+    font-size: 0.8em;
+  }
+  .issue_day,
+  .revocation {
+    width: 190px;
+  }
+  label.calender::after {
+    content: url("/images/calendar.png");
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+    left: 2px;
+  }
+  .venus_family {
+    width: 34%;
+  }
+  .venus {
+    float: right;
+    font-size: 0.8em;
+    padding: 3px 20px;
+  }
+}

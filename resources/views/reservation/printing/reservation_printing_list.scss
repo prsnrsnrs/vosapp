@@ -1,0 +1,97 @@
+@charset "utf-8";
+@import "../../../assets/scss/import/style";
+@import "~jquery-ui/themes/base/datepicker.css";
+
+body {
+  display: none;
+}
+
+.search_btn button {
+  margin: 10px 0;
+  padding: 0px 30px;
+  font-size: 1.2em;
+}
+.search_form {
+  table {
+    .reservation_input_passenger input {
+      width: 278px;
+    }
+
+    * label:after {
+      content: url("/images/calendar.png");
+      cursor: pointer;
+      position: relative;
+      top: 5px;
+      left: 2px;
+    }
+  }
+}
+thead th {
+  text-align: left;
+  font-weight: bold !important;
+  height: 25px;
+}
+.result_list {
+  table {
+    border: none;
+    thead,
+    tbody {
+      display: block;
+    }
+    tbody {
+      overflow-y: scroll;
+      max-height: 548px;
+      td {
+        text-align: center;
+        word-break: break-all;
+      }
+      tr:last-child td:nth-child(2){
+        border-bottom: solid 1px !important;
+      }
+    }
+  }
+  .data_title th{
+    background-color: $default !important;
+    text-align: center !important;
+  }
+}
+
+.button_bar form {
+  display: inline-block;
+  .pdf{
+    height: 21px;
+  }
+}
+
+.no_data {
+  display: inherit !important;
+  width: 100%;
+}
+
+// カスタムホバーテーブル
+table.hover_rows_custom tbody tr {
+  &:hover td {
+    background-color: $hover_rows;
+  }
+  &.hover td {
+    background-color: $hover_rows;
+  }
+  &.cancel:hover td {
+    background-color: transparent;
+  }
+  &.cancel.hover td {
+    background-color: transparent;
+  }
+  &.waiting:hover td {
+    background-color: transparent;
+  }
+  &.waiting.hover td {
+    background-color: transparent;
+  }
+  &.error:hover td {
+    background-color: transparent;
+  }
+  &.error.hover td {
+    background-color: transparent;
+  }
+}

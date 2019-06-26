@@ -1,0 +1,27 @@
+@charset "utf-8";
+@import "../../../assets/scss/import/style";
+@import "~jquery-ui/themes/base/datepicker.css";
+
+table.venus thead th{
+  height: 25px;
+  text-align: left;
+  font-weight: bold;
+}
+.search_btn button {
+  font-size: 1.2em;
+  padding: 0px 30px;
+  margin: 10px 0px;
+}
+
+.search_form {
+  table{
+    margin-bottom: 5px;
+  }
+  label:after {
+    content: url("/images/calendar.png");
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+    left: 2px;
+  }
+}

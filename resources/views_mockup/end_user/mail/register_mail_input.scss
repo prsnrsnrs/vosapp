@@ -1,0 +1,41 @@
+@charset "utf-8";
+@import "../../_style";
+@import "~sweetalert2/dist/sweetalert2.min.css";
+
+table {
+  tr:nth-child(1) th {
+    font-weight: bold !important;
+    height: 20px;
+  }
+  input {
+    width: 800px;
+  }
+  span {
+    color: $danger;
+  }
+}
+
+.send_btn {
+  margin-top: 5px;
+  button {
+    padding: 0px 30px 0px 30px;
+    font-size: 1.2em;
+  }
+}
+
+.success_mail_input{
+  display: none;
+  margin-top: 50px;
+  table{
+    tr:nth-child(3) td{
+      height: 200px;
+      padding: 15px;
+    }
+    .address{
+      padding-left: 15px;
+    }
+  }
+  .button_bar{
+    margin-left: 0!important;
+  }
+}

@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import "../../../assets/scss/import/style";
+
+/* 客室タイプ変更画面 */
+table {
+  td.description {
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+  }
+  dl {
+    display: table;
+    width: 87%;
+    margin: auto;
+
+    dt.cabin_rates {
+      display: table-cell;
+      width: 70px;
+      text-align: left;
+      padding-left: 7px;
+    }
+    dd.cabin_rates {
+      display: table-cell;
+      width: 70px;
+      text-align: left;
+    }
+  }
+  button {
+    padding: 5px 12px;
+  }
+}
+
+.wait_cancel {
+  font-size: 1em;
+}
+
+.confirm_time {
+  text-align: right;
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+
+.cabin_area {
+  table {
+    text-align: center;
+  }
+
+  .suite_cabin {
+    width: 90%;
+    height: auto;
+  }
+
+  .deluxe_cabin {
+    width: 75%;
+    height: auto;
+  }
+
+  .status {
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .bold {
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+  }
+
+}
+
+button {
+  padding: 0 30px;
+  font-size: 1.2em;
+}

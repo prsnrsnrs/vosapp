@@ -1,0 +1,41 @@
+@charset "utf-8";
+@import "../style";
+@import "~sweetalert2/dist/sweetalert2.min.css";
+
+table {
+  thead th {
+    text-align: left;
+    height: 25px;
+  }
+}
+.result {
+  .button_bar {
+    margin-left: 0px;
+  }
+  tbody td {
+    text-align: right;
+  }
+}
+.panel {
+  width: 100%;
+}
+.list {
+  table {
+    text-align: center;
+    border: none;
+    th, td {
+      padding: 5px 8px;
+    }
+    thead, tbody {
+      display: block;
+    }
+    .data_title th{
+      background-color: $default !important;
+      text-align: center;
+    }
+  }
+  .body {
+    overflow: scroll;
+    height: 420px;
+  }
+}

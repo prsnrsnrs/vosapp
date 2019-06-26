@@ -1,0 +1,15 @@
+@charset "utf-8";
+@import "../../../assets/scss/import/style";
+
+table {
+  margin: 5px 0px;
+  thead th {
+    font-weight: bold !important;
+  }
+}
+.total_th {
+  background-color: $title !important;
+}
+.money_select td{
+  border: none !important;
+}

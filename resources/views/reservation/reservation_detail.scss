@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import "../../assets/scss/import/style";
+
+body {
+  display: none;
+}
+
+.headline table {
+  margin-bottom: 10px;
+  thead th {
+    background-color: $default;
+  }
+  tbody td {
+    text-align: center;
+  }
+}
+.list table {
+  tfoot.total th {
+    background-color: $title;
+    height: 41px;
+  }
+}
+.index_cancel{
+  background-color: $gray;
+}
+.center{
+  margin-top: 10px;
+}
+.list table,
+.list_button_bar {
+  margin: 10px 0px;
+  button {
+    font-size: 1.2em;
+    padding: 0 14px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.course_menu a.disabled {
+  opacity: 0.6 !important;
+}

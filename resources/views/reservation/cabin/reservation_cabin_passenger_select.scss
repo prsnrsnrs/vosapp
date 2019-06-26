@@ -1,0 +1,115 @@
+@charset "utf-8";
+@import "../../../assets/scss/import/style";
+@import "~lightbox2/dist/css/lightbox.css";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+body {
+  display: none;
+}
+
+/* 客室人数選択画面 */
+.detail_area {
+  border: none;
+  margin: auto;
+  width: 100%;
+}
+
+.detail_area table {
+  dl {
+    display: table;
+    width: 100%;
+    margin: auto;
+  }
+  dt.cabin_rates {
+    display: table-cell;
+    text-align: right;
+    width: 35%;
+    padding-left: 10px;
+  }
+  dd.cabin_rates {
+    display: table-cell;
+    width: 65%;
+    text-align: right;
+    padding-right: 30px;
+  }
+  dt.choose_number {
+    display: table-cell;
+    text-align: left;
+    width: 70%;
+    padding-left: 15px;
+  }
+  dd.choose_number {
+    display: table-cell;
+    width: 30%;
+    text-align: left;
+    padding-right: 15px;
+  }
+}
+
+.deluxe_cabin {
+  height: 65%;
+  width: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+.zumen_deluxe_cabin {
+  height: 85%;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+
+.select_cabin_number {
+  select {
+    width: 100px;
+    margin: 5px 20px;
+  }
+}
+
+.choose_number {
+  text-align: left;
+  vertical-align: top;
+  padding: 3px 0px 3px 0px;
+  select {
+    width: 60px;
+    height: 25px;
+    padding: 0 0 0 5px;
+  }
+  table td {
+    border: none;
+    width: 284px;
+  }
+}
+
+.lb-container, .lb-container img {
+  width: auto !important;
+  height: 600px !important;
+}
+
+.slider {
+  width: 293px;
+  left: 4%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+}
+
+.slick-next {
+  right: -11px;
+  z-index: 99;
+}
+
+.slick-prev {
+  left: -11px;
+  z-index: 100;
+}
+
+.slick-slide img {
+  max-height: 187px;
+  margin: auto;
+}
+

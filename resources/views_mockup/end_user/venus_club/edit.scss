@@ -1,0 +1,21 @@
+@charset "utf-8";
+@import "../../style";
+
+input[type="text"] {
+  width: 70%;
+}
+.name {
+  border-right: none !important;
+  border-left: none !important;
+  input {
+    width: 40%;
+  }
+}
+table.venus thead th{
+  height: 25px;
+  text-align: left;
+  font-weight: bold;
+}
+p.danger {
+  display: inline-block;
+}

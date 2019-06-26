@@ -1,0 +1,15 @@
+@charset "utf-8";
+@import "../../../assets/scss/import/style";
+
+.user_delete {
+  table th {
+    font-weight: bold!important;
+  }
+  input[type="radio"] {
+    width: 30px;
+  }
+  .name {
+    border-right: none;
+    border-left: none;
+  }
+}

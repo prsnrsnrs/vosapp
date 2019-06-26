@@ -1,0 +1,28 @@
+@charset "utf-8";
+@import "../_style";
+@import "~sweetalert2/dist/sweetalert2.min.css";
+
+/* リクエスト入力画面 */
+.meal_request{
+  text-align: left;
+  padding-left: 5px;
+}
+.request {
+  margin: 10px 0px;
+}
+.button_deck{
+  margin-top: 10px;
+  text-align: right;
+  button {
+    padding: 0px 30px 0px 30px;
+    font-size: 1.2em;
+  }
+}
+
+input{
+    height: 18px;
+}
+
+table.request td:not(:nth-child(2)) {
+    text-align: center;
+}

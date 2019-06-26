@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import "../_style";
+@import "~sweetalert2/dist/sweetalert2.min.css";
+
+/* 質問事項のチェック */
+.check_area {
+  border: none;
+  margin: auto;
+  width: 100%;
+}
+
+.check_area table {
+  tbody {
+    td{
+      height: 40px;
+    }
+    td:not(:nth-child(3)) {
+      text-align: center;
+    }
+    td:nth-child(7) label:nth-child(1){
+      margin-right: 10px;
+    }
+    span{
+      margin-top: 10px;
+    }
+  }
+}
+.input {
+  margin: auto;
+}
+
+// 縦書き (ゴリ押しのレイアウト。。２行表示以外であれば、レイアウト崩れが発生する。)
+// TODO: 画面レイアウト確定後、再調整する。
+.question {
+  text-align: left;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: tb-lr;
+  writing-mode: vertical-lr;
+  //line-height: 1.2em;
+  height: 140px;
+  text-orientation: upright;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/** chrome */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .question {
+    margin: 5px auto;
+    padding: 0;
+  }
+}
+/** firefox */
+@-moz-document url-prefix() {
+  tr th:nth-child(2) {
+    padding-left: 25px;
+  }
+}
+/** ie */
+@media all and (-ms-high-contrast: none) {
+  .question {
+    padding: 0 20px;
+  }
+  tr th:nth-child(2) {
+    padding-left: 25px;
+  }
+}
+/** edge */
+@supports (-ms-ime-align:auto) {
+  .question {
+    padding: 0 20px;
+  }
+  tr th:nth-child(2) {
+    padding-left: 25px;
+  }
+}

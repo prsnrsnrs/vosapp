@@ -1,0 +1,32 @@
+@charset "utf-8";
+@import "../style";
+@import "~sweetalert2/dist/sweetalert2.min.css";
+
+.search_form {
+  height: 25%;
+  width: 100%;
+  margin-bottom: 10px;
+  thead th {
+    text-align: left;
+    font-weight: bold !important;
+    height: 25px;
+  }
+  button {
+    font-size: 1.2em;
+    padding: 0 30px;
+  }
+  .file_name {
+    border: none;
+    background-color: $white;
+  }
+  select {
+    width: 350px;
+  }
+}
+.history_list {
+  button {
+    height: 26px;
+    padding: 0 20px;
+  }
+}
+

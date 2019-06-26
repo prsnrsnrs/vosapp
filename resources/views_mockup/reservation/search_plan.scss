@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import "../_style";
+@import "~jquery-ui/themes/base/datepicker.css";
+
+button {
+  font-size: 1.2em;
+  padding: 0 30px;
+}
+
+.panel {
+  border: none;
+  width: 100%;
+}
+
+table {
+  * button {
+    padding: 0 9px;
+    margin: 3px 0;
+  }
+  thead th {
+    text-align: left;
+    font-weight: bold !important;
+    height: 25px;
+  }
+}
+
+.search_form {
+  table {
+    margin-bottom: 5px;
+  }
+  label:after {
+    content: url("/images/calendar.png");
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+    left: 2px;
+  }
+}
+.confirm_time {
+  text-align: right;
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+
+.result_list {
+  margin-top: 5px;
+  table tbody * td:not(:nth-child(1), :nth-child(2)) {
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    text-align: center;
+  }
+}
+
+.date > span {
+  display: inline-block;
+  &:after {
+    content: url(../../../public/images/calendar.png);
+    top: 4px;
+    margin-left: 5px;
+    position: relative;
+  }
+}
